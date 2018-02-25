@@ -1,0 +1,108 @@
+
+.gnm-current-conditions .temperature {
+  display: inline-block;
+  line-height: 80%;
+  padding-right: 4px;
+  font-size: 33px;
+  font-weight: 500;
+  color: #fff;
+
+
+}
+
+
+
+
+.gnm-current-conditions .weather-icon-sm {
+  margin-top: 8px;
+  width: 40px;
+}
+
+
+
+.gnm-current-conditions .feels-like {
+  font-size: 12px;
+  color: #ccc;
+  padding-top:2px;
+  margin-bottom:-10px;
+  padding-right: 7px;
+}
+
+
+.gnm-current-conditions .current-temp{
+  padding-left: 4px;
+  padding-top:10px;
+}
+
+.gnm-current-conditions .link-container{
+  padding-top: 5px;
+  max-width:210px;
+}
+.gnm-current-conditions .map-link{
+  padding-top: 5px;
+  font-size:13px;
+  color:white;
+}
+
+
+
+.gnm-current-conditions .radar-container{
+  line-height: 30%;
+  height:60px;
+  position: absolute;
+  top: 0px;
+  left:90px;
+}
+
+
+.gnm-current-conditions .radar-img{
+  margin-top:4px;
+  height: 56px;
+}
+
+
+.gnm-current-conditions .radar-img:hover{
+  outline-style:solid;
+  outline-width: thin;
+  outline-color: grey;
+}
+
+@media (max-width: 471px) {
+  .gnm-current-conditions{
+  /* display: none; */
+  }
+  .gnm-current-conditions .weather-icon-sm {
+    width: 30px;
+    margin-top: 22px;
+  }
+  .gnm-current-conditions .feels-like {
+    display: none;
+  }
+  .gnm-current-conditions .temperature{
+    font-size: 26px;
+    padding-top: 21px;
+  }
+}
+@media (max-width: 360px) {
+    .gnm-current-conditions .weather-icon-sm {
+      display: none;
+    }
+}
+@media (max-width: 320px) {
+    .gnm-current-conditions {
+      display: none;
+    }
+}
+
+
+@media (min-width: 1200px) {
+  .gnm-current-conditions{
+    min-width: 210px;/* only needed for safari for some odd reason */
+  }
+}
+
+@media (max-width: 1200px) {
+  .gnm-current-conditions{
+    max-width: 150px;/* only needed for safari for some odd reason */
+  }
+}

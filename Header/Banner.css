@@ -1,0 +1,200 @@
+.gnm-banner {
+  background-color : #be0000;;
+  overflow:hidden;
+  overflow                : hidden;
+  -webkit-transform-style : preserve-3d;
+  transform-style         : preserve-3d;
+  position: relative;
+}
+
+
+.gnm-banner .container{
+  height:10px;
+}
+
+.gnm-banner .show-all{
+  position: absolute;
+
+  right:0px;
+  color:white;
+  height:40px;
+  width: 40px;
+  z-index: 19;
+
+  padding: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 0px;
+
+}
+
+@media (min-width: 768px) {
+  .gnm-banner .show-all{
+      right: calc((100vw - 750px)/2 + 15px);
+  }
+}
+
+@media (min-width: 992px) {
+  .gnm-banner .show-all{
+      right: calc((100vw - 970px)/2 + 15px);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .gnm-banner .show-all{
+      right: calc((100vw - 1170px)/2 + 15px);
+  }
+}
+
+.gnm-banner .show-all .glyphicon{
+  top:-1px;
+}
+.gnm-banner .show-all .glyphicon:hover:before{
+  cursor: pointer;
+}
+
+
+
+.gnm-banner .show-all:focus,
+.gnm-banner .show-all:hover{
+
+  /*background-color: rgba(0,0,0,0.1);*/
+  outline-style: none;
+}
+.gnm-banner .glyphicon-chevron-up{
+  transition: transform 600ms ease-in-out;
+}
+
+.gnm-banner .glyphicon-chevron-up.collapsed{
+  transform: rotate3d(1,0,0,180deg);
+}
+
+
+.gnm-banner .notification{
+  height:14px;
+  width:14px;
+  border-radius: 3px;
+  color:white;
+  background-color: black;
+  font-size: 12px;
+}
+
+/* START Production CSS */
+
+.gnm-banner-control {
+
+  transition : height 600ms ease-in-out;
+}
+
+.gnm-banner-control.active {
+  height: 40px;
+}
+
+.gnm-banner-control.inactive {
+  height : 0px;
+}
+
+
+
+
+
+.gnm-banner .item {
+  position: absolute;
+  height: 40px;
+  overflow:hidden;
+  top:0px;
+  width:100%;
+  left               : 0;
+
+
+  max-height: 40px;
+}
+
+
+.gnm-banner .alert-container{
+  padding-left: 15px;
+}
+
+
+
+.gnm-banner .line-clamp {
+  display: -webkit-box;
+  line-height: 23px;
+ -webkit-line-clamp: 1;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+
+}
+
+
+
+.gnm-banner .alert {
+  display          : block;
+  max-height: 39px;
+  margin-bottom:0px;
+  padding-top:10px;
+  padding-left: 15px;
+  color            : #fff;
+  border-radius    : 0;
+  background-color : #333;
+  font-weight: 500;
+  transition: background-color 300ms ease-in-out;
+
+}
+@media (max-width: 768px) {
+  .gnm-banner .alert.active{
+    padding-right: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gnm-banner .alert{
+      padding-left: calc((100vw - 750px)/2 + 5px);
+
+  }
+}
+
+@media (min-width: 992px) {
+  .gnm-banner .alert{
+      padding-left: calc((100vw - 970px)/2 + 5px);
+  }
+}
+@media (min-width: 1200px) {
+  .gnm-banner .alert{
+      padding-left: calc((100vw - 1170px)/2 + 5px);
+  }
+}
+
+@media (min-width: 1470px) {
+  .gnm-banner .alert{
+      padding-left: calc((100vw - 1440px)/2 + 5px);
+  }
+}
+
+.gnm-banner .alert-red{
+  background-color : #be0000;
+}
+
+.gnm-banner .alert-dark-red{
+  background-color: #800000 ;
+}
+
+
+
+.gnm-banner a {
+  color: #e5e5e5;
+  line-height: 134%;
+}
+
+@media (max-width:768px) {
+  .gnm-banner .alert {
+    font-size : 13px;
+  }
+}
+
+
+
+
+/* END of Production CSS */

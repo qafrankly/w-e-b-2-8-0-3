@@ -1,0 +1,336 @@
+.gnm-almanac *{
+  transition: inherit;
+}
+
+.gnm-almanac .title{
+  display: inline;
+  margin-right:5px;
+}
+
+.gnm-almanac select{
+  font-size: 18px;
+  margin:3px 3px 0px 3px;
+}
+
+.gnm-almanac .col-xs-6{
+  padding-top: 20px;
+}
+
+.gnm-almanac .DayPickerInput{
+  position: relative;
+  margin-left : 5px;
+  font-size: 18px;
+  /* width: 200px; */
+  z-index: 2;
+}
+
+.gnm-almanac .DayPickerInput-OverlayWrapper{
+/* width: 200px; */
+}
+
+.gnm-almanac .DayPickerInput > input{
+  padding-left:10px;
+  cursor: pointer;
+    outline: none;
+
+}
+
+.gnm-almanac .fa.fa-calendar{
+  position: relative;
+  left:-25px;
+  pointer-events: none;
+  font-size: 18px;
+  z-index: 3;
+}
+.gnm-almanac .temperature-graph{
+  position: absolute;
+  padding-left:30px;
+  padding-top: 20px;
+  /* height: 360px; */
+}
+
+
+.gnm-almanac .numberline{
+  position: absolute;
+  width: 3px;
+  height: 280px;
+  bottom:0px;
+  left:53px;
+
+}
+
+.gnm-almanac .axis{
+  position: absolute;
+  width: 3px;
+  height: 200px;
+  bottom:0px;
+
+  background-color: #111111;
+}
+
+
+
+
+.gnm-almanac .range{
+  position: relative;
+  background-color: red;
+  width: 30px;
+  left: 26px;
+  height: 280px;
+  background: linear-gradient(to top, rgb(170, 0, 255), rgb(128, 0, 255), rgb(85, 0, 255), rgb(43, 0, 255), rgb(0, 0, 255), rgb(0, 42, 255), rgb(0, 85, 255),
+   rgb(0, 128, 255), rgb(0, 170, 255), rgb(0, 213, 255), rgb(0, 255, 255),
+   rgb(0, 255, 213), rgb(0, 255, 170), rgb(0, 255, 128), rgb(0, 255, 85),
+    rgb(0, 255, 42), rgb(0, 255, 0), rgb(43, 255, 0), rgb(85, 255, 0),
+    rgb(128, 255, 0), rgb(170, 255, 0), rgb(212, 255, 0), rgb(255, 255, 0),
+     rgb(255, 213, 0), rgb(255, 170, 0), rgb(255, 128, 0), rgb(255, 85, 0),
+     rgb(255, 42, 0), rgb(255, 0, 0), rgb(255, 42, 0));
+}
+
+.gnm-almanac .bottom-cover{
+  position: absolute;
+  width:30px;
+  bottom: 0px;
+  left:0px;
+  height:25px;
+  background-color: white;
+}
+
+
+.gnm-almanac .top-cover{
+  position: absolute;
+
+  bottom: 30px;
+  height: 30px;
+  width:30px;
+  background-color: white;
+}
+
+
+.gnm-almanac .ticks{
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  right:0px;
+  background-color: #111111;
+}
+
+.gnm-almanac .ticks span{
+  position: absolute;
+  bottom: -1rem;
+  left: -4rem;
+  width: 4rem;;
+  text-align: right;
+}
+
+.gnm-almanac span.typical{
+  position: absolute;
+
+  margin-bottom: -12px;
+  margin-left: 39px;
+  left: 0px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.gnm-almanac .typical > span{
+  display: inline-block;
+  width: 3rem;
+  text-align: right;
+}
+.gnm-almanac span.typical.bold{
+  font-weight: 700;
+  left: 0px;
+}
+
+.gnm-almanac .labels > svg{
+  position: absolute;
+  bottom:0px;
+  margin-right: 4px;
+  margin-left: 3px;
+}
+
+.gnm-almanac span.typical-label{
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.gnm-almanac .rainfall{
+  padding-left: 20px;
+}
+
+.gnm-almanac .rain-gauge{
+  height: 100%;
+  width: 66px;
+  border-left: 2px solid  #111111;
+  border-right: 2px solid  #111111;
+  border-bottom: 2px solid  #111111;
+  border-top: none;
+  position: relative;
+  margin-top: 20px;
+
+}
+
+.gnm-almanac .rain-gauge > div.fill{
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, rgb(0, 128, 255),rgb(0, 255, 255));
+  position: absolute;
+  bottom: 0px;
+
+}
+.gnm-almanac .rain-gauge > div.indicator{
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+  text-align: center;
+    line-height: 16px;
+  font-weight: 700;
+}
+
+.gnm-almanac .rain-gauge > div.indicator.record{
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+  text-align: center;
+
+  font-weight: 700;
+
+  border-bottom: 1px solid black;
+}
+
+.gnm-almanac .rain-gauge > div.indicator.record > span{
+  position: relative;
+  bottom: 8px;
+}
+.gnm-almanac .rain-gauge .today-precip{
+  position: relative;
+  text-align: center;
+  top:0px;
+  width: 100%;
+  font-weight: 700;x
+}
+.gnm-almanac .rain-gauge .today-precip > div{
+  z-index: 1;
+
+  position: relative;
+}
+
+
+.gnm-almanac .rain-gauge .today-precip span{
+  position: relative;
+  bottom: 0px;
+  font-size: 20px;
+  padding: 4px;
+  animation: raining 2000ms infinite;
+  transition: all 100ms linear;
+  opacity:0;
+}
+
+
+
+.gnm-almanac .rain-gauge .today-precip span.fa-snowflake-o:nth-child(1){
+  animation: raining-twisting-right 2200ms infinite;
+    animation-delay: 500ms;
+}
+.gnm-almanac .rain-gauge .today-precip span.fa-snowflake-o:nth-child(2){
+  animation: raining-twisting-middle 2500ms infinite;
+    animation-delay: 1200ms;
+}
+.gnm-almanac .rain-gauge .today-precip span.fa-snowflake-o:nth-child(3){
+  animation: raining-twisting-left 2400ms infinite;
+    animation-delay: 2000ms;
+}
+
+.gnm-almanac .rain-gauge .today-precip span:nth-child(1){
+  animation: raining 1900ms infinite;
+  animation-delay: 500ms;
+}
+.gnm-almanac .rain-gauge .today-precip span:nth-child(2){
+  animation: raining 1700ms infinite;
+  animation-delay: 900ms;
+}
+.gnm-almanac .rain-gauge .today-precip span:nth-child(3){
+  animation: raining 1500ms infinite;
+  animation-delay: 600ms;
+}
+
+@keyframes raining {
+  from {bottom: 30px;
+        opacity: 1}
+    to {bottom: -10px;
+        opacity:0;}
+}
+
+@keyframes raining-twisting-left {
+  from {bottom: 30px;
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    to {bottom: -10px;
+        opacity:0;
+        transform: rotate(135deg);}
+}
+@keyframes raining-twisting-middle {
+  from {bottom: 30px;
+        opacity: 1;
+        transform: rotate(60deg);
+      }
+    to {bottom: -10px;
+        opacity:0;
+        transform: rotate(120deg);}
+}
+@keyframes raining-twisting-right {
+  from {bottom: 30px;
+        opacity: 1;
+        transform: rotate(20deg);
+      }
+    to {bottom: -10px;
+        opacity:0;
+        transform: rotate(-90deg);}
+}
+
+
+
+.gnm-almanac .rain-gauge .snow-depth{
+  font-size: 10px;
+  position: relative;
+  top:-10px;
+}
+.gnm-almanac .rain-gauge .today-precip .fa{
+  color: rgb(0, 128, 255);
+}
+.gnm-almanac .rain-gauge .today-precip .fa-snowflake-o{
+  padding:2px;
+  font-size: 16px;
+  color: black;
+}
+
+
+.gnm-almanac .ticks span:after,
+.gnm-almanac .typical > span:after,
+.gnm-almanac span.degrees:after{
+  content:'\00b0';
+}
+.gnm-almanac .record{
+  position: absolute;
+  bottom:3px;
+  height: 25px;
+  width: 3px;
+}
+
+
+@media (max-width: 615px) {
+  .gnm-almanac .col-xs-6-extra-small{
+    width: 100%;
+    padding-left: 15vw;;
+  }
+}
+
+@media (max-width: 800px) {
+  .gnm-almanac {
+
+    padding-left: 20px;
+  }
+}

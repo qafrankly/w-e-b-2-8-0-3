@@ -1,0 +1,21 @@
+{
+  "thumbnail": "https://d30y9cdsu7xlg0.cloudfront.net/png/1036-200.png",
+  "tag": "GNM NEXGEN",
+  "affiliates":["kotv","kwtv"],
+  "propTypes": {
+    "affiliate": "PropTypes.string"
+
+  },
+  "defaultProps": {
+    "affiliate": "kotv"
+  },
+  "propChoices": {
+    "affiliate": [ "kotv", "kwtv"]
+  },
+  "FRN_resourceEndpoints": [
+    {
+      "url": "",
+      "type": "json"
+    }
+  ]
+}
