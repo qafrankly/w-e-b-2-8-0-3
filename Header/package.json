@@ -1,7 +1,7 @@
 {
   "thumbnail": "https://wnow-modules.s3.amazonaws.com/icon_stroke_news_articlelist.svg",
   "tag": "Heba",
-  "affiliates":["kotv","griffin","qafrankly","wndemo1"],
+  "affiliates":["wndemo1","qafrankly"],
   "propTypes": {
     "affiliate": "PropTypes.string"
 
